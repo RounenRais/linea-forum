@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# Linea Forum
 
-First, run the development server:
+A modern, full-stack forum platform built with a focus on scalability, security, and clean architecture.
 
+A portfolio-grade project designed to showcase real-world Next.js application development.
+
+</div>
+
+---
+
+## Overview
+
+**Linea Forum** is a community-driven discussion platform where users can create topics, participate in conversations, and manage their accounts securely.
+
+The project was developed as a **production-oriented forum application**, emphasizing modern web standards, authentication best practices, and maintainable database design.
+
+---
+
+## Key Features
+
+- User authentication and session management
+- Secure login system using industry standards
+- Create, edit, and delete forum topics
+- Comment-based discussion system
+- Category-based content organization
+- Role-based authorization (User / Admin)
+- Server-side rendering and optimized routing
+- Clean and scalable project structure
+
+---
+
+## Technology Stack
+
+### Frontend
+- Next.js (App Router)
+- React
+- TypeScript
+
+### Backend
+- Next.js Server Actions and API Routes
+- NextAuth for authentication and authorization
+
+### Database
+- Drizzle ORM
+- SQL-based database (PostgreSQL / MySQL / SQLite)
+
+### Architecture & Tooling
+- Modular folder structure
+- Environment-based configuration
+- Strong type safety
+- Production-ready setup
+
+---
+
+## Installation
+
+### 1. Clone the repository
 ```bash
+git clone https://github.com/RounenRaıs/linea-forum.git
+cd linea-forum
+### 2. Install dependencies
+
+npm install
+###3. Configure environment variables
+Create a .env file and provide the required values:
+DATABASE_URL=
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=http://localhost:3000
+###4. Database migration
+npm run db:migrate
+###5. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
