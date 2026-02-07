@@ -60,15 +60,23 @@ The project was developed as a **production-oriented forum application**, emphas
 ```bash
 git clone https://github.com/RounenRaıs/linea-forum.git
 cd linea-forum
+
+```
 ### 2. Install dependencies
+```bash
 
 npm install
-###3. Configure environment variables
+```
+### 3. Configure environment variables
+```bash
 Create a .env file and provide the required values:
 DATABASE_URL=
 NEXTAUTH_SECRET=
 NEXTAUTH_URL=http://localhost:3000
-###4. Database migration
+```
+
+
+### 4. Database migration
+```bash
 npm run db:migrate
-###5. Run the development server
-npm run dev
+```
