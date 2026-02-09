@@ -14,12 +14,13 @@ export default function Register() {
         redirect("/login")
     }
     return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+        <div className="flex min-h-screen  items-center justify-center bg-zinc-50 font-sans dark:bg-gray-500">
             <form action={handleRegister}>
-                <input type="text" name="name" placeholder="Name" />
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
-                <button type="submit">Register</button>
+                <div className="formItems flex flex-col gap-8">
+                <input className="border-2 border-white p-2" type="text" name="name" placeholder="Name" />
+                <input className="border-2 border-white p-2" type="email" name="email" placeholder="Email" />
+                <input className="border-2 border-white p-2" type="password" name="password" placeholder="Password" />
+                <button type="submit" className="bg-sky-300 p-2">Register</button></div>
             </form>
             </div>
     );

@@ -8,3 +8,9 @@ export const usersTable = pgTable("users", {
   email: varchar({ length: 255 }).notNull().unique(),
   avatar: text("avatar")
 });
+export const postsTable = pgTable("posts", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  title: varchar({ length: 255 }).notNull(),
+  content: text("content").notNull(),
+  authorId: text().notNull()
+});
