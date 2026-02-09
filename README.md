@@ -44,7 +44,7 @@ The project was developed as a **production-oriented forum application**, emphas
 
 ### Database
 - Drizzle ORM
-- SQL-based database (PostgreSQL / MySQL / SQLite)
+- SQL-based database (PostgreSQ)
 
 ### Architecture & Tooling
 - Modular folder structure
