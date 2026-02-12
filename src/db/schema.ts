@@ -12,5 +12,12 @@ export const postsTable = pgTable("posts", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   title: varchar({ length: 255 }).notNull(),
   content: text("content").notNull(),
-  authorId: text().notNull()
+  authorId: text().notNull(),
+
+});
+export const commentsTable = pgTable("comments", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  content: text("content").notNull(),
+  postId: integer().notNull(),
+  authorId: text().notNull(),
 });

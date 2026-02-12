@@ -21,7 +21,7 @@ export default async function Navbar() {
                 <Link href="/register">Register</Link>
             </div>}
             {
-                session && <div className="signArea flex gap-4">
+                session && <div className="signArea flex gap-4 items-center">
                     <Link href="/profile">
           <Image src={user?.avatar?.length && user.avatar.length > 80 ? user.avatar : "/default_profile.png"} alt="avatar" width={60} height={60}  className="rounded-full" unoptimized /></Link>
                      <form action={handleSignOut}>

@@ -18,9 +18,7 @@ export default function AddPostPage() {
         <textarea name="content" className="w-full border-2 border-white p-2" placeholder="Content" required></textarea>
         <button type="submit" className="bg-sky-300 p-2 text-black">Add Post</button>
         </div>
-
       </form>
-
       </div>
   );
 }   
